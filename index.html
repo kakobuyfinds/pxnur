@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>CSSBuy spreadsheet | Schoenen, kleding en QC-foto’s</title>
+  <meta name="description" content="Gebruik deze Nederlandstalige CSSBuy spreadsheet-gids om sneakers, kleding en accessoires te vergelijken. Controleer maten, QC-foto’s en verzendkosten.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CSSBuy spreadsheet | Schoenen, kleding en QC-foto’s">
+  <meta property="og:description" content="Bekijk de categorieën en ontdek wat je controleert van productlink tot verzending.">
+  <meta name="theme-color" content="#f4ede2">
+  <style>
+    :root{color-scheme:light;--paper:#f4ede2;--ink:#202526;--muted:#505456;--navy:#172e42;--line:#cfc4b4;--white:#fffcf6}
+    *{box-sizing:border-box} body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+    header .wrap{display:flex;justify-content:space-between;align-items:center;gap:.6rem 1rem;flex-wrap:wrap;padding-block:.85rem;border-bottom:1px solid var(--line)}
+    header a:first-child{font-weight:800;letter-spacing:.08em} a{color:inherit;text-underline-offset:.22em}
+    a:focus-visible,summary:focus-visible{outline:3px solid #a0351c;outline-offset:4px}
+    h1,h2,h3{line-height:1.14;text-wrap:balance} h1{font-size:clamp(2.3rem,6.8vw,5.5rem);letter-spacing:-.055em;margin:.25em 0} h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin:0 0 .75rem} h3{margin:0 0 .55rem}
+    p{margin:.55rem 0 1rem} section{margin-block:clamp(2rem,5vw,4rem)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:1.5rem;padding-top:1.5rem}
+    .hero p{max-width:52ch} figure{margin:0} img{display:block;width:100%;height:auto;background:#e8ded0}
+    .hero img{aspect-ratio:4/3;object-fit:cover;border-radius:1rem}
+    figcaption{color:var(--muted);font-size:.875rem;padding-top:.35rem}
+    .button{display:inline-block;background:var(--navy);color:white;border-radius:.35rem;padding:.7rem 1rem;font-weight:700}
+    .categories,.gallery,.articles{display:grid;gap:.8rem;grid-template-columns:repeat(4,minmax(0,1fr))}
+    .categories{grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;padding:0;margin:0}
+    .categories a{display:flex;align-items:center;min-height:3.75rem;height:100%;padding:.6rem .75rem;background:var(--white);border:1px solid var(--line);border-radius:.45rem;font-weight:650;overflow-wrap:anywhere}
+    .categories a:hover{background:var(--navy);color:white}
+    .gallery img{aspect-ratio:1;object-fit:contain;border-radius:.6rem}
+    .articles{grid-template-columns:repeat(2,minmax(0,1fr))}
+    article{background:var(--white);padding:1.1rem;border-top:3px solid #a0351c}
+    article p:last-child{margin-bottom:0}
+    details{border-top:1px solid var(--line);padding:.65rem 0} summary{font-weight:700;cursor:pointer;padding:.3rem 0}
+    footer{background:var(--navy);color:white;padding:1.25rem 0} footer p{margin:.35rem 0}
+    @media(max-width:46rem){.hero{grid-template-columns:1fr}.hero img{max-height:22rem}.categories{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:31rem){.articles{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "inLanguage":"nl",
+    "name":"CSSBuy spreadsheet | Schoenen, kleding en QC-foto’s",
+    "mainEntity":[
+      {"@type":"Question","name":"Wat is een CSSBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Een CSSBuy spreadsheet is een overzicht van producten en productlinks dat je kunt gebruiken om artikelen te vergelijken voordat je via een aankoopdienst bestelt."}},
+      {"@type":"Question","name":"Waar komen de categorielinks uit?","acceptedAnswer":{"@type":"Answer","text":"De categorielinks openen de betreffende rubriek op HipoBuyFind. De overige links openen de startpagina van HipoBuyFind."}},
+      {"@type":"Question","name":"Kan ik de echtheid controleren met QC-foto’s?","acceptedAnswer":{"@type":"Answer","text":"QC-foto’s tonen zichtbare details, zoals kleur, stikwerk en labels. Vraag om controleerbaar herkomstbewijs als echtheid belangrijk is."}},
+      {"@type":"Question","name":"Wanneer kan ik de verzendkosten vergelijken?","acceptedAnswer":{"@type":"Answer","text":"Vergelijk de verzendopties zodra je het verpakte gewicht, de doosafmetingen en het land van bestemming weet. Controleer welk gewicht de vervoerder gebruikt voor het tarief."}},
+      {"@type":"Question","name":"Wat doe ik als een productlink verouderd is?","acceptedAnswer":{"@type":"Answer","text":"Zoek met het artikelnummer en de modelnaam naar een actuele vermelding. Vergelijk de foto’s en de gekozen uitvoering voordat je de nieuwe link gebruikt."}}
+    ]
+  }
+  </script>
+  <!--
+    Zoekonderzoek: de eerste Google-resultatenpagina was via de beschikbare zoektoegang niet verifieerbaar.
+    Tien geraadpleegde domeinen en hun SEO-invalshoeken:
+    sopel.fit (categorieën en bestelstappen); cssbuysspreadsheet.com (QC en bronlinks);
+    cssbuyluxe.com (categorieën en prijsvergelijking); chinagrails.com (QC en magazijngewicht);
+    rep.tools (linkcontrole en conversie); cssbuysheetz.com (foto-index en productvarianten);
+    jadeship.com (dubbele vermeldingen); cssbuy.site (exacte hoofdzoekterm);
+    cssbuy.fit (sportshirts en sieraden); grails.fit (zoeken op merk en verkoper).
+    Secundaire zoektermen: CSSBuy spreadsheet voor schoenen; CSSBuy spreadsheet voor kleding;
+    CSSBuy QC-foto’s; CSSBuy verzendkosten.
+    Longtailzoektermen zijn verwerkt in de vier koopartikelen.
+  -->
+<link rel="canonical" href="https://kakobuyfinds.github.io/pxnur/">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a href="https://www.hipobuyfind.com">HipoBuyFind</a>
+      <span>Koopgids voor schoenen, kleding en accessoires</span>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>CSSBuy spreadsheet</h1>
+        <p>Een CSSBuy spreadsheet helpt je producten en productlinks te vergelijken. Kies hieronder een categorie op HipoBuyFind en gebruik de koopgids om de juiste uitvoering, maat en totale kosten te controleren.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Bekijk HipoBuyFind</a>
+      </div>
+      <figure>
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Air_Force_1.JPG/960px-Air_Force_1.JPG" width="960" height="720" alt="Nike Air Force 1-basketbalschoen" fetchpriority="high" loading="eager">
+        <figcaption>Nike Air Force 1 · Foto: Xanor, Wikimedia Commons, CC0</figcaption>
+      </figure>
+    </div>
+    <section aria-labelledby="categorieen">
+      <h2 id="categorieen">Kies een categorie</h2>
+      <nav aria-label="Productcategorieën op HipoBuyFind">
+        <ul class="categories">
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Schoenen</a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies en truien</a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jassen</a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Broeken en shorts</a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Petten en mutsen</a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Sets</a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Ondergoed</a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Sportshirts</a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoires</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section aria-labelledby="koopgids">
+      <h2 id="koopgids">Van productlink tot pakket</h2>
+      <div class="articles">
+        <article>
+          <h3>CSSBuy spreadsheet voor schoenen</h3>
+          <p>Wil je Nike-sneakers op modelnummer zoeken? Vergelijk het artikelnummer op de productpagina met het label op de doos. Als je de juiste sneakermaat wilt kiezen, meet dan beide voeten en gebruik de langste voet voor de maattabel. Je kunt ook de binnenzoollengte in centimeters vergelijken met een paar dat goed zit.</p>
+          <p>Om verschillende kleurvarianten van sneakers te vergelijken, kijk je naar de zij- en bovenaanzichten. Controleer de breedte van de voorvoet, de hoogte van de hiel en de staat van de buitenzool op detailfoto’s. Zo zie je sneller of twee vergelijkbare aanbiedingen dezelfde uitvoering tonen.</p>
+        </article>
+        <article>
+          <h3>CSSBuy spreadsheet voor kleding</h3>
+          <p>Wil je de borstbreedte van een hoodie opmeten? Leg een goed passend exemplaar plat en meet van oksel tot oksel. Gebruik dezelfde methode om de schouderbreedte van een jas te meten en de mouwlengte van een trui te vergelijken. Noteer of de verkoper platte maten of omtrekmaten gebruikt.</p>
+          <p>Controleer de stofsamenstelling van een T-shirt als je wilt weten hoe de stof aanvoelt en hoe je die wast. Vergelijk bij een broek de taillewijdte en de binnenbeenlengte afzonderlijk. Kijk bij een set ook of je voor de boven- en onderkant dezelfde maat moet kiezen.</p>
+        </article>
+        <article>
+          <h3>CSSBuy QC-foto’s beoordelen</h3>
+          <p>QC-foto’s zijn controlefoto’s. Vraag bij onduidelijkheden om een detailfoto van het maatlabel, een close-up van de stiksels of een foto van de sluiting van het accessoire. Controleer of de foto’s bij jouw gekozen variant horen en vraag bij twijfel om een foto met een meetlint.</p>
+          <p>Controleer bij een Weidian-productlink de verkoper en de uitvoering. Vergelijk bij een Taobao-vermelding de kleur- en maatopties. Controleer bij een 1688-aanbieding de minimale bestelhoeveelheid. Dat voorkomt dat je twee aanbiedingen vergelijkt die voor verschillende aantallen of uitvoeringen gelden.</p>
+        </article>
+        <article>
+          <h3>CSSBuy verzendkosten vergelijken</h3>
+          <p>Noteer per artikel de productprijs, de binnenlandse verzendkosten en eventuele kosten van de aankoopdienst. Vergelijk daarna het werkelijke gewicht van het pakket met het volumegewicht. Schoenendozen kunnen het pakket groter maken. Kijk daarom ook naar de doosafmetingen na het inpakken.</p>
+          <p>Voor verzending naar Nederland of België gebruik je altijd het juiste bestemmingsland bij het vergelijken van tarieven. Controleer welke belastingen en afhandelingskosten al in het tarief zitten en bewaar de referentie van de gekozen verzendoptie voor je eigen overzicht.</p>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="details">
+      <h2 id="details">Details om op te letten</h2>
+      <p>Gebruik deze merkfoto’s als kijkvoorbeelden voor materiaal, afwerking en vorm.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://br.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-camisa-oversized-jeans-bordada-com-monogram--HVA07WY38650_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" alt="Blauw Louis Vuitton-denimoverhemd met geborduurd monogram" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton · Borduurwerk en kraag</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Gucci-baseballpet met GG-patroon" loading="lazy" decoding="async">
+          <figcaption>Gucci · Patroon en afwerking van de pet</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.luxe-em.com/cdn/shop/files/001_3e78aa64-04f3-4ec6-81eb-e3aad7cdb5bc.jpg?v=1759779439&amp;width=480" width="480" height="480" alt="Oranje Hermès Carré 90-sjaal met sleutelmotieven" loading="lazy" decoding="async">
+          <figcaption>Hermès · Motief en randen van de sjaal</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/R2752HOMSTD990_E01-1?%24default_GH%24=&amp;crop=562%2C732%2C909%2C520&amp;extend=0%2C0%2C0%2C250&amp;hei=520&amp;wid=480" width="480" height="520" alt="Zilverkleurige Dior CD Icon-ring met in elkaar grijpende letters" loading="lazy" decoding="async">
+          <figcaption>Dior · Vorm en afwerking van de ring</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section aria-labelledby="vragen">
+      <h2 id="vragen">Veelgestelde vragen</h2>
+      <details open>
+        <summary>Wat is een CSSBuy spreadsheet?</summary>
+        <p>Een CSSBuy spreadsheet is een overzicht van producten en productlinks dat je kunt gebruiken om artikelen te vergelijken voordat je via een aankoopdienst bestelt.</p>
+      </details>
+      <details>
+        <summary>Waar komen de categorielinks uit?</summary>
+        <p>De categorielinks openen de betreffende rubriek op HipoBuyFind. De overige links openen de startpagina van HipoBuyFind.</p>
+      </details>
+      <details>
+        <summary>Kan ik de echtheid controleren met QC-foto’s?</summary>
+        <p>QC-foto’s tonen zichtbare details, zoals kleur, stikwerk en labels. Vraag om controleerbaar herkomstbewijs als echtheid belangrijk is.</p>
+      </details>
+      <details>
+        <summary>Wanneer kan ik de verzendkosten vergelijken?</summary>
+        <p>Vergelijk de verzendopties zodra je het verpakte gewicht, de doosafmetingen en het land van bestemming weet. Controleer welk gewicht de vervoerder gebruikt voor het tarief.</p>
+      </details>
+      <details>
+        <summary>Wat doe ik als een productlink verouderd is?</summary>
+        <p>Zoek met het artikelnummer en de modelnaam naar een actuele vermelding. Vergelijk de foto’s en de gekozen uitvoering voordat je de nieuwe link gebruikt.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>Onafhankelijke koopgids. Merknamen en foto’s dienen ter illustratie.</p>
+      <p><a href="https://www.hipobuyfind.com">Naar HipoBuyFind</a></p>
+    </div>
+  </footer>
+</body>
+</html>
